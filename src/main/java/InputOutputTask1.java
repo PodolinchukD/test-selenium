@@ -1,12 +1,12 @@
-import java.util.Scanner;
-
 public class InputOutputTask1 {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Input a season, pls:");
-        String seasonName = in.nextLine();
-        switch (seasonName){
+        String a = "winter";
+        String b = "spring";
+        String c = "summer";
+        String d = "autumn";
+
+        switch (a) {
             case "winter":
                 System.out.println("It is cold");
                 break;
