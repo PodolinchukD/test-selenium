@@ -1,26 +1,16 @@
 public class InputOutputTask1 {
 
     public static void main(String[] args) {
-        String a = "winter";
-        String b = "spring";
-        String c = "summer";
-        String d = "autumn";
+        System.out.println(getWeather("Winter"));
+    }
+    public static String getWeather(String season) {
 
-        switch (a) {
-            case "winter":
-                System.out.println("It is cold");
-                break;
-            case "spring":
-                System.out.println("It is damp");
-                break;
-            case "summer":
-                System.out.println("It is hot");
-                break;
-            case "autumn":
-                System.out.println("It is rainy");
-                break;
-            default:
-                System.out.println("You write wrong season name!");
+        switch (season.toLowerCase()) {
+            case "winter": return "It is cold";
+            case "spring": return "It is damp";
+            case "summer": return "It is hot";
+            case "autumn": return "It is rainy";
+            default: return "You write wrong season name!";
         }
     }
 }
