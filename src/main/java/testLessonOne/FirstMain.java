@@ -44,9 +44,9 @@ public class FirstMain {
     }
 
     public static String getDayType(String dayOfWeek) {
-        if (dayOfWeek == "Monday" || dayOfWeek == "Tuesday" || dayOfWeek =="Wednesday" || dayOfWeek =="Thursday" || dayOfWeek == "Friday") {
+        if (dayOfWeek == "monday" || dayOfWeek == "tuesday" || dayOfWeek =="wednesday" || dayOfWeek =="thursday" || dayOfWeek == "friday") {
             return "It's a weekday!";
-        } else if (dayOfWeek == "Saturday" || dayOfWeek == "Sunday") {
+        } else if (dayOfWeek == "saturday" || dayOfWeek == "sunday") {
             return "It's a day off!";
         } else {
             return "You write a wrong word/day!";
