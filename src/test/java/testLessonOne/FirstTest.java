@@ -27,7 +27,7 @@ public class FirstTest {
 
     @Test
     public void getDayTypeTest() throws Exception {
-        String day = "saturday";
+        String day = "SUNdaY";
         System.out.println(firstmain.getDayType(day.toLowerCase()));
     }
 
