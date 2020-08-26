@@ -2,7 +2,7 @@ package testLessonOne;
 
 import org.testng.annotations.Test;
 
-import java.util.Locale;
+import java.util.Arrays;
 
 public class FirstTest {
     private FirstMain firstmain = new FirstMain();
@@ -29,6 +29,18 @@ public class FirstTest {
     public void getDayTypeTest() throws Exception {
         String day = "SUNdaY";
         System.out.println(firstmain.getDayType(day));
+    }
+
+    @Test
+    public void reverseMethod() throws Exception {
+        int [] arrayExample = {7, 10, 5, 13, 2, 21};
+        System.out.println(Arrays.toString(firstmain.reverseMethod(arrayExample)));
+    }
+
+    @Test
+    public void maxElementMethod() throws Exception {
+        int [] arrayExample2 = {17, 110, 15, 113, 12, 121};
+        System.out.println(firstmain.maxElementMethod(arrayExample2));
     }
 
 }

@@ -52,4 +52,22 @@ public class FirstMain {
             return "You write a wrong word/day!";
         }
     }
+
+    public static int[] reverseMethod(int[] array) {
+        for (int i = 0; i < array.length >> 1; i ++) {
+            array[array.length-1-i] ^= array[i] ^= array[array.length-1-i];
+            array[i] ^= array[array.length-1-i];
+        }
+        return array;
+    }
+
+    public static int maxElementMethod(int[] arrayExample2) {
+        int max = arrayExample2[0];
+        for(int i = 0; i < arrayExample2.length; i++) {
+            if (arrayExample2[i] > max) {
+                max=arrayExample2[i];
+            }
+        }
+        return max;
+    }
 }
