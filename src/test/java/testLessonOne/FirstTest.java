@@ -5,12 +5,12 @@ import org.testng.annotations.Test;
 import java.util.Arrays;
 
 public class FirstTest {
-    private FirstMain firstmain = new FirstMain();
+    private static FirstMain firstmain = new FirstMain();
 
     @Test
     public void getWeatherTest() throws Exception {
         String season = "winter";
-        System.out.println(firstmain.getWeather(season));
+        System.out.println(FirstMain.getWeather(season));
     }
 
     @Test
