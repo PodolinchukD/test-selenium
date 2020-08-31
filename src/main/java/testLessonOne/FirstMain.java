@@ -79,4 +79,14 @@ public class FirstMain {
         }
         return max;
     }
+
+    public static int minElementMethod(int[] array3) {
+        int min = array3[0];
+        for(int i = 0; i < array3.length; i++) {
+            if (array3[i] < min) {
+                min=array3[i];
+            }
+        }
+        return min;
+    }
 }

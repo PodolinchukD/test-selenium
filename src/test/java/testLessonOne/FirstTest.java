@@ -33,14 +33,20 @@ public class FirstTest {
 
     @Test
     public void reverseMethod() throws Exception {
-        int [] arrayExample = {7, 10, 5, 13, 2, 21};
+        int[] arrayExample = {7, 10, 5, 13, 2, 21};
         System.out.println(Arrays.toString(firstmain.reverseMethod(arrayExample)));
     }
 
     @Test
     public void maxElementMethod() throws Exception {
-        int [] arrayExample2 = {17, 110, 15, 113, 12, 121};
+        int[] arrayExample2 = {17, 110, 15, 113, 12, 121};
         System.out.println(firstmain.maxElementMethod(arrayExample2));
+    }
+
+    @Test
+    public void minElementMethod() throws Exception {
+        int[] arrayExample3 = {12, 32, 67, 100, 67, 1, 27};
+        System.out.println(firstmain.minElementMethod(arrayExample3));
     }
 
 }
