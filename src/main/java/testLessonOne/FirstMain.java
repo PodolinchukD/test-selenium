@@ -53,19 +53,28 @@ public class FirstMain {
         }
     }
 
+//    public static int[] reverseMethod(int[] array) {
+//        for (int i = 0; i < array.length >> 1; i ++) {
+//            array[array.length-1-i] ^= array[i] ^= array[array.length-1-i];
+//            array[i] ^= array[array.length-1-i];
+//        }
+//        return array;
+//    }
+
     public static int[] reverseMethod(int[] array) {
-        for (int i = 0; i < array.length >> 1; i ++) {
-            array[array.length-1-i] ^= array[i] ^= array[array.length-1-i];
-            array[i] ^= array[array.length-1-i];
+        for (int i = 0; i < array.length / 2; i ++) {
+            int temp = array[i];
+            array[i] = array[array.length - 1 - i];
+            array[array.length - 1 - i] = temp;
         }
         return array;
     }
 
-    public static int maxElementMethod(int[] arrayExample2) {
-        int max = arrayExample2[0];
-        for(int i = 0; i < arrayExample2.length; i++) {
-            if (arrayExample2[i] > max) {
-                max=arrayExample2[i];
+    public static int maxElementMethod(int[] array2) {
+        int max = array2[0];
+        for(int i = 0; i < array2.length; i++) {
+            if (array2[i] > max) {
+                max=array2[i];
             }
         }
         return max;
