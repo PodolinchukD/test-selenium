@@ -49,4 +49,22 @@ public class FirstTest {
         System.out.println(firstmain.minElementMethod(arrayExample3));
     }
 
+    @Test
+    public void twoMaxElementMethod() throws Exception {
+        int[] arrayExample4 = {7, 5, 12, 99, 1, 83};
+        System.out.println(Arrays.toString(firstmain.twoMaxElementMethod(arrayExample4)));
+    }
+
+    @Test
+    public void dividingMethod() throws Exception {
+        int[] arrayExample5 = {2, 6, 9, 100, 99, 63, 61, 12, 14, 16, 20};
+        System.out.println(firstmain.dividingMethod(arrayExample5));
+    }
+
+    @Test
+    public void counterAndElement() throws Exception {
+        int[] arrayExample6 = {1,1,2,1,5,6,6,6,6,6,8,5,9,7,1};
+        System.out.println(Arrays.toString(firstmain.counterAndElement(arrayExample6)));
+    }
+
 }

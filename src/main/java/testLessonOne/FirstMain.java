@@ -1,5 +1,7 @@
 package testLessonOne;
 
+import java.util.Arrays;
+
 public class FirstMain {
 
     public static String getWeather(String season) {
@@ -89,4 +91,42 @@ public class FirstMain {
         }
         return min;
     }
+
+    public static int[] twoMaxElementMethod(int[] array4) {
+        int size = array4.length;
+        Arrays.sort(array4);
+        int maxFirst = array4[size-1];
+        int maxSecond = array4[size-2];
+        int[] arrayNew = {maxFirst, maxSecond};
+        return arrayNew;
+    }
+
+    public static int dividingMethod(int[] array5){
+        int sum = 0;
+        for (int i = 0; i < array5.length; i++) {
+            if (array5[i] % 2 == 0 & !(array5[i] % 3 == 0)) {
+                sum++;
+            }
+        }
+        return sum;
+    }
+
+    public static int[] counterAndElement(int[] array6){
+        int max = 0 ;
+        int count[] = new int[array6.length];
+        for(int i = 0 ; i <array6.length ; i++) {
+            int ch = array6[i];
+            count[ch] +=1 ;
+        }
+
+        int chh = 0;
+        for(int i = 0 ; i <array6.length ;i++)  {
+            int ch = array6[i];
+            if(count[ch] > max) {max = count[ch] ; chh = ch ;}
+        }
+        int[] arrayNew1 = {max, chh};
+        return arrayNew1;
+
+    }
+
 }
